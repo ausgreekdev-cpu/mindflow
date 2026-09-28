@@ -1,0 +1,11 @@
+# Netlify build settings for the MindFlow Next.js app.
+# Connect this repo in app.netlify.com and set these env vars in
+# Site settings -> Environment variables:
+#   NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY,
+#   SUPABASE_SERVICE_ROLE_KEY, NEXT_PUBLIC_PARTYKIT_HOST, NEXT_PUBLIC_APP_URL
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"

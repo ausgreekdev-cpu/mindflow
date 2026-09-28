@@ -1,0 +1,6 @@
+{
+  "name": "mindflow-party",
+  "main": "party/main.ts",
+  "port": 1999,
+  "compatibilityDate": "2026-09-24"
+}
