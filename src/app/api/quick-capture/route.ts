@@ -56,7 +56,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid token" }, { status: 401 });
   }
 
-  void supabase
+  await supabase
     .from("api_tokens")
     .update({ last_used_at: new Date().toISOString() })
     .eq("id", tokenRow.id);
